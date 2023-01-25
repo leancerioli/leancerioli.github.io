@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leandro Cerioli - Portfolio</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="js/script.js"></script>
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/542c236632.js" crossorigin="anonymous"></script>
+    <!-- PARALLAX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.js"></script>
+</head>
+
+<body>
+
+    <div class="barra noselect" id="top-page">
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="#top-page" draggable="false">Inicio</a></li>
+                <li><a href="#about-page" draggable="false">Sobre mi</a></li>
+                <li><a href="#knowledge-page" draggable="false">Conocimientos</a></li>
+                <li><a href="#contact-page" draggable="false">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="homepage" data-parallax="scroll" data-image-src="img/background.jpg">
+        <img class="bg-logo noselect" draggable="false" src="img/logo.png">
+        <div class="bg-rectangle">
+            <h1 class="noselect">LEANDRO CERIOLI</h1>
+            <h2 class="noselect">• Web Developer •</h2>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="main-container">
+
+        <section class="about-section">
+            <a id="about-page">about-page</a>
+            <div class="aboutme">
+                <h1>SOBRE MI</h1>
+                <p>Me llamo Leandro Cerioli, soy de Argentina - Buenos Aires. Recientemente comencé a sentirme fascinado por la programación web, por ejemplo: desarrollando aplicaciones y construyendo sitios web.</p>
+                <br>
+                <p>Como esta área complementa mis estudios, estoy buscando un equipo de desarrolladores dispuesto a ofrecerme un puesto entre ellos y asi adquirir mas experiencia en este entorno. A cambio, ofrecería mi todo compromiso y sería una adición agradable y amigable para su equipo.</p>
+                <br><br>
+                <p>Uno de mis objetivos se adapta a las necesidades de evolucionar y mejorar dentro de la empresa donde me desarrolle como profesional.</p>
+                <div class="profile">
+                    <img src="img/profile.jpg" draggable="false">
+                </div>
+                <input type="button" value="Descarga mi CV">
+            </div>
+        </section>
+
+        <section class="knowledge-section">
+            <a id="knowledge-page">about-page</a>
+            <div class="knowledge">
+                <h1>CONOCIMIENTOS</h1>
+                <div class="cards-container">
+                    <div class="card" onmouseover="chbg('html-bar','#49667D')" onmouseout="chbg('html-bar','#FFF')">
+                        <h3>HTML</h3>
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="card" onmouseover="chbg('css-bar','#49667D')" onmouseout="chbg('css-bar','#FFF')">
+                        <h3>CSS</h3>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="card" onmouseover="chbg('js-bar','#49667D')" onmouseout="chbg('js-bar','#FFF')">
+                        <h3>JAVASCRIPT</h3>
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="card" onmouseover="chbg('py-bar','#49667D')" onmouseout="chbg('py-bar','#FFF')">
+                        <h3>PYTHON</h3>
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="card" onmouseover="chbg('php-bar','#49667D')" onmouseout="chbg('php-bar','#FFF')">
+                        <h3>PHP</h3>
+                        <i class="fab fa-php"></i>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <div class="skill-html">
+                        <span>Html</span><span>80%</span>
+                        <div class="bar"><div class="bar-fill" id="html-bar"></div></div>
+                    </div>
+                    <div class="skill-css">
+                        <span>Css</span><span>60%</span>
+                        <div class="bar"><div class="bar-fill" id="css-bar"></div></div>
+                    </div>
+                    <div class="skill-javascript">
+                        <span>JavaScript</span><span>40%</span>
+                        <div class="bar"><div class="bar-fill" id="js-bar"></div></div>
+                    </div>
+                    <div class="skill-python">
+                        <span>Python</span><span>20%</span>
+                        <div class="bar"><div class="bar-fill" id="py-bar"></div></div>
+                    </div>
+                    <div class="skill-php">
+                        <span>Php</span><span>30%</span>
+                        <div class="bar"><div class="bar-fill" id="php-bar"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <a id="contact-page">about-page</a>
+            <div class="contact">
+            <h1>CONTACTO</h1>
+                <div class="contact-form">
+                    <form method="POST" action="">
+                        <p>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" required>
+                        </p>
+                        <p>
+                            <label for="surname">Apellido</label>
+                            <input type="text" name="surname" id="surname" required>
+                        </p>
+                        <p>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </p>
+                        <p>
+                            <label for="phone">Telefono</label>
+                            <input type="number" name="phone" id="phone" required>
+                        </p>
+                        <p class="block" for="message">
+                            <label for="message">Mensaje</label> 
+                             <textarea name="message" id="message" rows="6" required></textarea>
+                        </p>
+                        <p class="block">
+                            <input type="submit" value="enviar">
+                        </p>
+                    </form>
+                </div>
+                <div class="redes">
+                    <ul>
+                        <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>Leandro Cerioli | WebDeveloper © | 2021</footer>
+
+</body>
+
+</html>
