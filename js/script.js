@@ -9,10 +9,12 @@ const listItems = document.querySelector('#list')
 
 listButton.addEventListener("click", () => {
     listItems.classList.toggle("hidden")
+    listButton.classList.toggle("mobilehidden")
 })
 
 listItems.addEventListener("click", () => {
     setTimeout(() => {
         listItems.classList.add("hidden")
+        listButton.classList.toggle("mobilehidden")
     }, 150)
 })
